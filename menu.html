@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummytreatsnaija | Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">Yummy<span>TreatsNaija</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="menu-page">
+    <h1>Our Menu</h1>
+    <input type="text" id="search" placeholder="Search for your favorite dish...">
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="puff puff.jpeg" alt="Jollof Rice">
+            <h3>Puff Puff</h3>
+            <p>₦2,500</p>
+            <button onclick="addToCart('Jollof Rice', 2500)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+            <img src="small chops.jpeg" alt="Small Chops">
+            <h3>Small Chops</h3>
+            <p>₦1,800</p>
+            <button onclick="addToCart('Small Chops', 1800)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+            <img src="pepper soup.jpeg" alt="Pepper Soup">
+            <h3>Pepper Soup</h3>
+            <p>₦2,000</p>
+            <button onclick="addToCart('Pepper Soup', 2000)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+            <img src="grilled chicken.jpeg" alt="Grills">
+            <h3>Grilled Chicken</h3>
+            <p>₦3,500</p>
+            <button onclick="addToCart('Grilled Chicken', 3500)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+            <img src="chilled zobo.jpeg" alt="Drinks">
+            <h3>Chilled Zobo</h3>
+            <p>₦800</p>
+            <button onclick="addToCart('Chilled Zobo', 800)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Yummytreatsnaija</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
